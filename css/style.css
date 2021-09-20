@@ -234,6 +234,33 @@ img {
     border-bottom: 1px #ccc solid; 
 }
 
+.contact-form {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.contact-form .form-control {
+    margin: 30px 0;
+
+}
+
+.contact-form input[type='text'],
+.contact-form input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.ccontact-form input:focus {
+    outline: none;
+}
+
 /* Tablets and under */
 @media(max-width: 768px){
     .grid,
