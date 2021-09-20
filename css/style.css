@@ -3,6 +3,8 @@
 :root {
     --primary-color:#ff7402;
     --light-color: #f4f4f4;
+    --success-color:#5cb85c;
+    --error-color:#df0000;
 }
 
 * {
@@ -38,6 +40,11 @@ p {
 
 img {
     width: 100;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0;
 }
 
 /* Navbar */
@@ -77,10 +84,11 @@ img {
 }
 
 .showcase h1 {
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .showcase p {
+    font-size: 20px;
     margin: 20px 0
 }
 
@@ -165,9 +173,20 @@ img {
     grid-row: 1 / span 2;
 }
 
+
+
 /* SectionFour */
 .cloud .grid {
-    grid-template-columns: 4fr 3fr;
+    grid-template-columns: 100fr 3fr;
+    width: 1800px;
+    
+}
+
+/* Footer */
+.fab {
+     
+    padding-left: 15px;
+    color: #fff;
 }
 
 /* Services */
@@ -179,6 +198,7 @@ img {
 .services-sub-head h2{
    grid-template-rows: 1fr;
     justify-self: flex-end;
+    
 }
 
 .services-main .card > i{
@@ -187,14 +207,32 @@ img {
 
 .services-main .grid {
     padding: 30px;
-    margin-left: 170px;
-    margin-right: 170px;
+    margin-left: 380px;
+    margin-right: 380px;
 }
 
 .services-main .grid p {
     padding-left: 25px;
 }
 
+/* Contact */
+.contact-body h3 {
+    margin: 20px;
+
+}
+
+.contact-body .grid{
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+
+}
+
+.contact-main nav li{
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px #ccc solid; 
+}
 
 /* Tablets and under */
 @media(max-width: 768px){
@@ -202,7 +240,9 @@ img {
     .showcase .grid,
     .stats .grid,
     .cli .grid,
-    .cloud .grid {
+    .cloud .grid,
+    .services-main .grid,
+    .contact-main .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -225,6 +265,24 @@ img {
         grid-column: 1 / span 2;
         grid-row: 1 / span 2;
     }
+    .services-head, 
+    .services-sub-head, 
+    .contact-head, .cloud,
+    .footer .stats{
+        text-align: center;
+    }
+
+    .services-head img, 
+    .services-sub-head img, 
+    .contact-head img, .cli img, .cloud,
+    .footer, .stats {
+        justify-self: center;
+    }
+
+    .services-main .grid >* :first-child,
+    .services-main .grid > *:nth-child(2) {
+        grid-column: 1;
+    }
 }
 
 /* mobile */
@@ -242,4 +300,5 @@ img {
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.1);
     }
+    
 }
