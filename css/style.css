@@ -101,7 +101,7 @@ img {
 .showcase-form {
     position: relative;
     top: 60px;
-    height: 350px;
+    height: 425px;
     width: 400px;
     padding: 40px;
     z-index: 100;
@@ -113,12 +113,13 @@ img {
 }
 
 .showcase-form input[type='text'],
-.showcase-form input[type='email'] {
+.showcase-form input[type='email'], .showcase-form textarea {
     border: 0;
     border-bottom: 1px solid #b4becb;
     width: 100%;
     padding: 3px;
     font-size: 16px;
+    font-family: sans-serif;
 }
 
 .showcase-form input:focus {
@@ -236,7 +237,7 @@ img {
 
 .contact-form {
     position: relative;
-    height: 350px;
+    height: 470px;
     width: 100%;
     padding: 40px;
     z-index: 100;
@@ -249,13 +250,16 @@ img {
 }
 
 .contact-form input[type='text'],
-.contact-form input[type='email'] {
+.contact-form input[type='email'], .contact-form textarea {
     border: 0;
     border-bottom: 1px solid #b4becb;
     width: 100%;
     padding: 3px;
     font-size: 16px;
+    font-family: sans-serif;
 }
+
+
 
 .ccontact-form input:focus {
     outline: none;
