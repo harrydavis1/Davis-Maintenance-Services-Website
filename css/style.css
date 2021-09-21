@@ -228,6 +228,17 @@ img {
 
 }
 
+.contact-body .grid> *:first-child {
+    grid-row: 1 / span 2;
+
+}
+
+.contact-body .grid> *:nth-child(3) {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+}
+
+
 .contact-main nav li{
     font-size: 17px;
     padding-bottom: 5px;
@@ -319,12 +330,24 @@ img {
 /* mobile */
 @media(max-width: 500px){
     .navbar {
-        height: 110px;
+        height: 130px;
     }
 
     .navbar .flex {
         flex-direction: column;
+        
       
+    }
+
+    .contact-body .grid .fb-page {
+        visibility: hidden;
+    }
+
+    .cli img {
+        visibility: hidden;
+    }
+    .cloud .flex{
+        flex-direction: column;
     }
 
     .navbar ul {
