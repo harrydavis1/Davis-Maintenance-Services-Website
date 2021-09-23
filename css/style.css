@@ -335,7 +335,7 @@ img {
 /* mobile */
 @media(max-width: 500px){
     .navbar {
-        height: 130px;
+        height: 150px;
     }
 
     .navbar .flex {
