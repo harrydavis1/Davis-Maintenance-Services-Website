@@ -428,13 +428,15 @@ pre {
     width: 300px;
   }
 
-  .docs-main, .docs-main .docs-form .card, .docs-main .card{
+  .docs-main, .docs-main .docs-form .card{
     justify-self: center;
     text-align: center;
     
   }
 
   .docs-main .card {
-    width: 370px
+    width: 370px;
+    justify-self: center;
+    text-align: center;
   }
 }
