@@ -427,7 +427,9 @@ pre {
     width: 300px;
   }
 
-  .docs-main{
+  .docs-main, .docs-main .fb-page, .docs-main .docs-form .card, .docs-main .card{
+    justify-self: center;
+    text-align: center;
     width: 300px;
   }
 }
