@@ -239,7 +239,7 @@ pre {
 .docs-form {
   position: relative;
   height: 370px;
-  width: 380px;
+  width: 360px;
   padding: 40px;
   z-index: 100;
   justify-self: flex-end;
