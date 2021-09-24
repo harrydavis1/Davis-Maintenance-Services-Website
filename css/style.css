@@ -239,7 +239,7 @@ pre {
 .docs-form {
   position: relative;
   height: 370px;
-  width: 440px;
+  width: 380px;
   padding: 40px;
   z-index: 100;
   justify-self: flex-end;
@@ -430,7 +430,6 @@ pre {
   .docs-main, .docs-main .docs-form .card, .docs-main .card{
     justify-self: center;
     text-align: center;
-    margin: 40px;
     
   }
 }
