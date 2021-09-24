@@ -250,6 +250,7 @@ pre {
 
 }
 
+
 .docs-form input[type='text'],
 .docs-form input[type='email'], .docs-form textarea {
     border: 0;
@@ -431,5 +432,9 @@ pre {
     justify-self: center;
     text-align: center;
     
+  }
+
+  .docs-main .card {
+    width: 370px
   }
 }
